@@ -5,13 +5,18 @@ h1, h2, h3, p, ol, ul {
 
 * { box-sizing:border-box; }
 
-img { max-width:100%; }
+img { 
+	max-width:100%; 
+}
+
+
+
 
 /************* End CSS RESETS **************/
 
 body {
-	background:url(images/paper.png);
-	color: #424242;
+	background-color: rgb(224, 206, 184);
+	color: #0c0c0c;
 	font-family: 'Source Sans Pro', sans-serif;
 	padding: 30px 0;
 }
@@ -22,7 +27,7 @@ body {
 }
 
 header {
-	border-bottom: 3px solid #424242;
+	border-bottom: 3px solid #26970a;
 	padding-bottom: 20px;
 }
 
@@ -34,12 +39,13 @@ section {
 }
 
 footer {
-	border-top: 3px solid #424242;
+	border-bottom: 3px solid #26970a;
 	padding-top: 20px;
 }
 
 #about {
 	padding: 10px;
+	color: #000508;
 }
 
 #projects {
@@ -49,6 +55,8 @@ footer {
 .alignleft {
 	float: left;
 	margin: 0 10px 5px 0;
+	max-width: 150px;  
+	height: auto;  
 }
 
 /************ typography *************/
@@ -56,6 +64,7 @@ footer {
 h1, h2, h3 {
 	font-family: 'Bitter', serif;
 	margin-bottom:.5em;
+	color: #a10505;
 }
 
 h1 {
@@ -89,6 +98,7 @@ a {
 
 a:hover {
 	text-decoration:underline;
+	color: rgb(235, 85, 235);
 }
 
 @media only screen and (min-width: 600px) {
@@ -99,6 +109,14 @@ a:hover {
 	
 }
 
+@media only screen and  (max-width: 900px) {
+    main {
+        display: block;
+    }
 
+    #about, #projects {
+        padding: 15px;
+    }
+}
 	
 
